@@ -3,7 +3,7 @@ title = "Neels's Blog"
 theme = "hugo-notepadium"
 #copyright = "©2019 Notepadium."
 
-languageCode = "en-za"
+languageCode = "en-us"
 hasCJKLanguage = false
 
 enableRobotsTXT = true
