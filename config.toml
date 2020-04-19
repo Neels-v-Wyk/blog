@@ -54,7 +54,7 @@ showTags = true             # /tags/
 
 [[params.nav.custom]]
 title = "About"
-url = "/about"
+url = "https://cv.neels.tech"
 
 [[params.nav.custom]]
 title = "Hugo"
