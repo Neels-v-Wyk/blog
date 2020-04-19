@@ -1,0 +1,36 @@
+name: Build & deploy
+
+on:
+  push:
+    branches: 
+    - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - shell: bash
+      env:
+        GOOGLE_ANALYTICS_ID: ${{ secrets.GOOGLE_ANALYTICS_ID }}
+      run: |
+        sed -i 's/GOOGLE_ANALYTICS_ID/$GOOGLE_ANALYTICS_ID/g' config.toml
+
+    - uses: actions/checkout@master
+      
+    - name: Get Hugo
+      uses: peaceiris/actions-hugo@v2.2.0
+      with:
+        hugo-version: 'latest'
+
+    - name: Build static files
+      run: hugo --gc --minify --cleanDestinationDir
+      
+    - name: Deploy to Firebase
+      uses: w9jds/firebase-action@master
+      with:
+        args: deploy --only hosting
+      env:
+        FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
