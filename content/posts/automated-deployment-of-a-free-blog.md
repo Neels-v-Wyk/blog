@@ -135,4 +135,6 @@ Get the [Hugo Setup Action](https://github.com/peaceiris/actions-hugo) module an
 ```
 Deploy to Firebase with the token we generated earlier.
 
-All done :D
+### In conclusion
+
+Whenever you want to create a new post, just run `hugo new posts/tech-stuff.md` and commit/push your changes when done, the rest will be handled for you :D
