@@ -27,7 +27,7 @@ I've never had a blog so I thought I'd try my hand at one. After getting some ad
 
 ### Firebase
 
-You can have up to three free projects on Google Firebase if you have a Google account, so you'll need one of those to get started. You'll also need a Hugo site ready to be deployed stored on GitHub. Once you've got those, run `npm install firebase-tools` so that you can interact with firebase, then when it's finished you can run firebase login:ci` to get a token that you can use later. It should look something like this:
+You can have up to three free projects on Google Firebase if you have a Google account, so you'll need one of those to get started. You'll also need a Hugo site ready to be deployed stored on GitHub. Once you've got those, run `npm install firebase-tools` so that you can interact with firebase, then when it's finished you can run `firebase login:ci` to get a token that you can use later. It should look something like this:
 ```console
 ❯ firebase login:ci
 
