@@ -29,7 +29,7 @@ This behavior is the source of your annoyance if you spin a VPS in a place like 
 
 Don't get me wrong, not _all_ Maps suck, it's just that _most_ maps suck. The reason for this is pretty simple: the earth is round, and maps tend to be flat. You can't really accurately map a curved 3d surface on a 2d plane without some distortion. The most popular method of map projection is the Mercator projection:
 
-![Mercator Projection](/static/mercator_projection.png)
+![Mercator Projection](/mercator_projection.png)
 
 With this projection, the tops and bottom of the map is very inflated, and areas that are far north will be disproportionate to areas that are near the equator. For example, Greenland (2,166 million km²) is slightly less than twice the surface area of South Africa (1,22 million km²). Doesn't look it, right?
 
