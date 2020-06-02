@@ -3,11 +3,12 @@ title = "Automated Deployment of a Free Blog"
 date = "2020-04-19"
 description = "An article detailing how this blog is automatically deployed to Firebase using GitHub Actions"
 tags = [
+    "Tech",
+]
+categories = [
     "GitHub",
     "Hugo",
     "Automation",
-]
-categories = [
     "CI/CD",
 ]
 +++

@@ -3,11 +3,12 @@ title = "An Inaccurate Map of The Internet"
 date = "2020-04-25"
 description = "An article showing how I made a map of the internet with some GeoIP location data"
 tags = [
+    "Tech",
+]
+categories = [
     "Networking",
     "Visualization",
     "Internet",
-]
-categories = [
     "Data",
 ]
 +++
