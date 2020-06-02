@@ -2,10 +2,10 @@
 title = "How I do Journaling"
 date = "2020-06-01"
 description = "An article regarding the way I do day to day journaling with jrnl.sh"
-tags = [
+categories = [
     "Stuff",
 ]
-categories = [
+tags = [
     "Data",
 ]
 +++

@@ -2,10 +2,10 @@
 title = "An Inaccurate Map of The Internet"
 date = "2020-04-25"
 description = "An article showing how I made a map of the internet with some GeoIP location data"
-tags = [
+categories = [
     "Tech",
 ]
-categories = [
+tags = [
     "Networking",
     "Visualization",
     "Internet",
@@ -48,8 +48,5 @@ with open_database('data/GeoLite2-City.mmdb') as db:
     print 'My IP info:', match
     # This prints info about your current IP
 ```
-
-TODO:
-- clean geoip data
-- make a folium map of it
-- integrate map into this page
+\# TODO
+Finish this when I have a work laptop that can actually run the above without having to use 2% of the data
