@@ -25,7 +25,7 @@ There are a few reasons I journal, let me jot them down real quick and give a br
 
 #### Time Tracking
 
-Currently, I'm working as a consultant. As such, time tracking is an essential part of my day to day activities, and while I don't like getting too granular, it does look good to be able to show what you've been up to for every few hours of the day. Journaling makes this quite easy as I often make notes regarding what I'm busy with, thus I can usually just use the heading and timestamp from a journal to keep track of what I've done during the day. This also helps a lot during standups.
+Currently, I'm working as a consultant. As such, time tracking is an *essential* part of my day to day activities, and while I don't like getting *too* granular, it does look good to be able to show what you've been up to for every few hours of the day. Journaling makes this quite easy as I often make notes regarding what I'm busy with, thus I can usually just use the heading and timestamp from a journal to keep track of what I've done during the day. This also helps a lot during standups.
 
 #### Thought Organization
 
@@ -33,7 +33,7 @@ About to go out for lunch? Make some notes of what you're busy with. Knocking of
 
 #### Future reference to past problems
 
-Ever encounter an obscure problem, solve it, and then a few months down the line you have the same problem again? Just wait for the great feeling you get when the second time the problem shows up you've already got a solution at hand
+Ever encounter an obscure problem, solve it, and then a few months down the line you have the same problem again? Just *wait* for the great feeling you get when the second time the problem shows up you've already got a solution at hand
 
 #### Setting and getting to the goalpost
 
@@ -45,12 +45,13 @@ Sometimes after a long week of problem after problem, roadblocks and red tape, s
 
 #### Venting
 
-Let's be honest, everybody likes to complain. Especially when someone else is agreeing with your complaints, and there's no one that agrees with me more than myself. I find that a quick two sentence complaint helps me rid myself of the weight of something bothering me. Wheather is cold? Complain, dress warmer, and move on. Badly designed software getting to you? Complain, take a deep breath, and realize things like Citrix are a part of life.
+Let's be honest, *everybody* likes to complain. Especially when someone else is agreeing with your complaints, and there's no one that agrees with me more than myself. I find that a quick two sentence complaint helps me rid myself of the weight of something bothering me. Weather is cold? Complain, dress warmer, and move on. Badly designed software getting to you? Complain, take a deep breath, and realize things like Citrix are a part of life.
 
 ### How I Journal
 
 Personally I like to use [jrnl.sh](https://jrnl.sh/). Let me walk you through how I use it.
 
+#### For work
 When I want to write a journal entry regarding something work related, I do it using a "work" journal. I run `jrnl work` and up pops a vscode window with the following pre-made template:
 ```txt
 
@@ -93,6 +94,25 @@ Similarly I can look for tags on things that were previously relevant:
 
 Of course, just these text snippets don't deal it justice. It actually looks quite nice:
 ![jrnl.png](/jrnl.png)
+
+#### For life
+
+Life journals are for every day random thoughts or ideas that I just want to not down, I don't use the template unless I find it necessary, and as such I can just use **jrnl** from the command line:
+```bash
+❯ jrnl life Starting on msngr. Ive started working on @msngr, it should end up being a project that syncs jrnl entries to @s3, possibly other cloud storage providers.
+[Entry added to life journal]
+
+❯ jrnl life -n 1
+❯ jrnl life -n 1
+2020-06-02 20:25 Starting on msngr.
+| Ive started working on @msngr, it should end up being a project that syncs
+| jrnl entries to @s3, possibly other cloud storage providers.
+
+```
+
+Neat, simple, and quick. Perfect for jotting down an idea that might escape you. For those curious, you can look at the progress of [msngr here](https://github.com/Neels-v-Wyk/msngr)
+
+#### jrnl config
 
 Here is my `jrnl.yaml` configuration file:
 ```yaml
